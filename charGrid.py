@@ -1,3 +1,7 @@
+#charGrid.py
+#Here is one method that I used to solve the Character Grid problem from
+#the book Automate The Boring Stuff with Python
+
 grid = [['.', '.', '.', '.', '.', '.'],
         ['.', 'O', 'O', '.', '.', '.'],
         ['O', 'O', 'O', 'O', '.', '.'],
@@ -8,23 +12,13 @@ grid = [['.', '.', '.', '.', '.', '.'],
         ['.', 'O', 'O', '.', '.', '.'],
         ['.', '.', '.', '.', '.', '.']]
 
-#print(grid[0][0], end='')
-#print(grid[1][0], end='')
-#print(grid[2][0], end='')
-#print(grid[3][0], end='')
-#print(grid[4][0], end='')
-#print(grid[5][0], end='')
-#print(grid[6][0], end='')
-#print(grid[7][0], end='')
-#print(grid[8][0], end='')
-
 n = 0 
-while True:
+while True: #Here I set up an "infinity" loop
     for i in range(0,9):
         print(grid[i][n], end='')
     print('')
     n += 1
-    if n == 6:
+    if n == 6: #If statement to end the "infinity" loop
         break
     
 
